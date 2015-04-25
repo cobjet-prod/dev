@@ -1,0 +1,18 @@
+//var connect = require('connect');
+//var serveStatic = require('serve-static');
+//connect().use(serveStatic(__dirname + '/demo')).listen(8000);
+
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('./webpack.config');
+
+new WebpackDevServer(webpack(config), {
+  publicPath: config.output.publicPath,
+  hot: true
+}).listen(6000, 'localhost', function (err, result) {
+  if (err) {
+    console.log(err);
+  }
+
+  console.log('Listening at localhost:6000');
+});
