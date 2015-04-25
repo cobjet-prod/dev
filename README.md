@@ -1,4 +1,4 @@
-react-maps
+react-maps on dev
 ==========
 
 To get the demo running:
