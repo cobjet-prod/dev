@@ -8,3 +8,5 @@ To get the demo running:
 3. `npm install`
 4. `node server`
 5. Demo site will be running on `http://localhost:3000`
+
+- updated from dev
