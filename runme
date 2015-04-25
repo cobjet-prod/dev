@@ -1,2 +1,9 @@
-npm i
-nodemon server.js
+
+
+export IOJS="/home/www/.nvm/versions/io.js/v1.8.1/bin"
+export PATH="$IOJS:$PATH"
+
+npm install
+#nodemon $PWD/server.js 2>&1 > ./logs/dev.cobjet.log &
+#NODE_ENV=development forever start $PWD/server.js
+NODE_ENV=production nodemon $PWD/server.js 2>&1 > ./logs/dev.cobjet.log &
